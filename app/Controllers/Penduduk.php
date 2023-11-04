@@ -269,7 +269,7 @@ class Penduduk extends BaseController
         $all_data_kecamatan = $kecamatan_model->findAll();
 
         $desa_model = new DesaModel();
-        $all_data_desa = $desa_model->findAll();
+        $all_data_desa = $desa_model->findAll(); //...
 
         return view('edit_data_penduduk', ['data_penduduk' => $data_penduduk, "all_data_agama" => $all_data_agama, "all_data_golonganDarah" => $all_data_golonganDarah, "all_data_ukuranBaju" => $all_data_ukuranBaju, "all_data_document" => $all_data_document, "all_data_provinsi" => $all_data_provinsi, "all_data_kabupaten" => $all_data_kabupaten, "all_data_kecamatan" => $all_data_kecamatan, "all_data_desa" => $all_data_desa]);
         // echo '<pre>';
